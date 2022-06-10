@@ -1,0 +1,20 @@
+/* --- General styles --- */
+.place__paragraph {
+    margin: 0 0 24px 0;
+    font-family: 'Inter', 'Helvetica', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.place__paragraph:last-of-type {
+    margin-bottom: 0;
+}
+
+/* --- Small phones --- */
+@media screen and (max-width: 320px) {
+    .place__paragraph {
+        padding: 0 16px;
+    }
+}
