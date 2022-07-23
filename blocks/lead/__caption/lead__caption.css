@@ -1,25 +1,20 @@
-/* --- General styles --- */
 .lead__caption {
-    padding: 5px 0;
-    text-transform: uppercase;
-    font-family: 'Inter', 'Helvetica', sans-serif;
-    font-style: normal;
-    font-weight: normal;
+    color: #FFFFFF;
+    margin-top: 8px;
     font-size: 10px;
-    line-height: 14px;
-    letter-spacing: 0.15em;
-}
-
-/* --- Big mobile phones --- */
-@media screen and (max-width: 768px) {
+    line-height: calc(14 / 10);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 928px) {
     .lead__caption {
-        padding: 5px 24px;
+      margin-left: 24px;
     }
-}
-
-/* --- Small phones --- */
-@media screen and (max-width: 320px) {
+  }
+  
+  @media screen and (max-width: 425px) {
     .lead__caption {
-        padding: 5px 16px;
+      margin-left: 16px;
     }
-}
+  }

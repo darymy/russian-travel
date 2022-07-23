@@ -1,9 +1,28 @@
 .intro__text {
+    color: #FFFFFF;
     max-width: 690px;
-    margin: 32px 0 0;
-    font-family: 'Inter', 'Helvetica', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
-    line-height: 26px;
-}
+    line-height: calc(26 / 16);
+    margin: 40px 0 0;
+  }
+  
+  @media screen and (max-width: 928px) {
+    .intro__text {
+      max-width: 720px;
+      margin: 40px auto 0;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .intro__text {
+      margin: 40px 24px 0;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .intro__text {
+      max-width: 288px;
+      margin: 40px auto 0;
+    }
+  }
+  

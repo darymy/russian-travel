@@ -1,28 +1,17 @@
-/* --- General styles --- */
 .lead__subtitle {
+    color: #FFFFFF;
+    margin: 32px auto 0;
     max-width: 640px;
-    margin: 0 auto;
-    padding: 24px 16px 64px;
-    text-align: center;
-    font-family: 'Inter', 'Helvetica', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 30px;
-    line-height: 36px;
-}
-
-/* --- Big tablets --- */
-@media screen and (max-width: 1024px) {
+    line-height: calc(36 / 30);
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 425px) {
     .lead__subtitle {
-        padding: 24px 16px 56px;
+      margin: 16px auto 0;
+      max-width: 288px;
+      font-size: 16px;
+      line-height: calc(20 / 16);
     }
-}
-
-/* --- Small devices --- */
-@media screen and (max-width: 720px) {
-    .lead__subtitle {
-        padding: 16px 16px 40px;
-        font-size: 16px;
-        line-height: 20px;
-    }
-}
+  }

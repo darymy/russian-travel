@@ -1,28 +1,25 @@
-/* --- General styles --- */
 .lead__title {
+    color: #FFFFFF;
     margin: 0 auto;
-    padding: 64px 16px 0;
-    text-align: center;
-    font-family: 'Inter', 'Helvetica', sans-serif;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 96px;
-    line-height: 100px;
     max-width: 720px;
-    text-rendering: optimizeLegibility;
-}
-
-/* --- Small laptop and tablets ---  */
-@media screen and (max-width: 1024px) {
+    font-size: 96px;
+    line-height: calc(100 / 96);
+    font-weight: 900;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 720px) {
     .lead__title {
-        padding: 56px 16px 0;
+      max-width: 425px;
+      font-size: 60px;
+      line-height: calc(44 / 40);
     }
-}
-
-/* --- Small devices --- */
-@media screen and (max-width: 720px) {
+  }
+  
+  @media screen and (max-width: 425px) {
     .lead__title {
-        font-size: 40px;
-        line-height: 44px;
+      max-width: 288px;
+      font-size: 40px;
+      line-height: calc(44 / 40);
     }
-}
+  }

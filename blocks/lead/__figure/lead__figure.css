@@ -1,19 +1,16 @@
-/* --- General styles --- */
 .lead__figure {
-    margin: 0;
-    padding: 0 148px;
-}
-
-/* --- Big tablets --- */
-@media screen and (max-width: 1024px) {
+    max-width: 100%;
+    margin: 64px 0 0;
+  }
+  
+  @media screen and (max-width: 1279px) {
     .lead__figure {
-        padding: 0 48px;
+      margin: 56px 0 0;
     }
-}
-
-/* --- Big mobile phones and smaller --- */
-@media screen and (max-width: 768px) {
+  }
+  
+  @media screen and (max-width: 425px) {
     .lead__figure {
-        padding: 0;
+      margin: 40px 0 0;
     }
-}
+  }

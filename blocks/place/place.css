@@ -1,40 +1,31 @@
-/* --- General styles --- */
 .place {
     display: grid;
-    grid-template-rows: auto auto;
-    grid-auto-flow: column;
-    grid-template-columns: 19fr 20fr;
-    grid-column-gap: 40px;
-    grid-row-gap: 48px;
-    margin-bottom: 90px;
-}
-
-.place:last-of-type {
-    margin-bottom: 0;
-}
-
-/* --- Big tablets --- */
-@media screen and (max-width: 1024px) {
+    grid-template-columns: fit-content(460px) fit-content(484px);
+    gap: 48px 40px;
+    justify-content: center;
+    margin-top: 80px;
+  }
+  
+  @media screen and (max-width: 1279px) {
     .place {
-        grid-column-gap: 32px;
-        margin-bottom: 84px;
+      grid-template-columns: 440px fit-content(456px);
+      gap: 48px 32px;
     }
-}
-
-/* --- Big phones --- */
-@media screen and (max-width: 768px) {
+  }
+  
+  @media screen and (max-width: 928px) {
     .place {
-        grid-column-gap: 28px;
-        margin-bottom: 72px;
+      grid-template-columns: 340px fit-content(352px);
+      gap: 48px 28px;
+      margin-top: 73px;
     }
-}
-
-/* --- Small phones --- */
-@media screen and (max-width: 720px) {
+  }
+  
+  @media screen and (max-width: 631px) {
     .place {
-        grid-auto-flow: row;
-        grid-row-gap: 32px;
-        grid-template-columns: 1fr;
-        margin-bottom: 48px;
+      grid-template-columns: fit-content(631px);
+      gap: 32px;
+      margin-top: 50px;
     }
-}
+  }
+  

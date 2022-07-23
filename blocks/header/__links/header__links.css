@@ -1,0 +1,11 @@
+.header__links {
+    margin-top: 18px;
+    display: flex;
+    gap: 18px;
+  }
+  
+  @media screen and (max-width: 425px) {
+    .header__links {
+      margin-top: 14px;
+    }
+  }
